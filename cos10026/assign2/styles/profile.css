@@ -1,0 +1,147 @@
+/*
+    filename: profile.css
+    author: Ta Quang Tung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for profile.php page.
+*/
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+#profile {
+    padding: 4rem;
+    font-family: "DM Sans", sans-serif;
+    color: #343A40;
+}
+
+#profile h1, #profile h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#profile h1 {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+#profile h2 {
+    font-size: 1.5rem;
+}
+
+#profile > div {
+    width: 100%;
+    max-width: 84rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem 5rem;
+}
+
+#profile a {
+    color: #343A40;
+}
+
+#info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#favorites {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#history {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+@media only screen and (max-width: 48rem) {
+    #profile h1, #profile h2 {
+        text-align: center;
+    }
+
+    #profile > div {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        gap: 2rem;
+    }
+
+    #info {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    #favorites {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    #history {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #history > p {
+        text-align: center;
+    }
+}
+
+#favorites > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 2rem;
+}
+
+#history > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #E9ECEF;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-radius: 1em;
+    border: solid 1px #E9ECEF;
+}
+
+.card p {
+    margin: .5em 0;
+}
+
+.order-cost {
+    font-size: 1.25rem;
+}
+
+.order-product {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.order-id {
+    font-size: .9rem;
+    color: #6C757D;
+}
+
+.green {
+    color: rgb(0, 199, 0);
+}
+
+.yellow {
+    color: rgb(198, 198, 73);
+}
+
+.favorite-name {
+    font-weight: bold;
+}

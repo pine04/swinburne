@@ -1,0 +1,55 @@
+/*
+    filename: receipt.css
+    author: Nguyen Tran Quang Minh, Nguyen Quang Huy
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for receipt.php page.
+*/
+
+#receipt {
+    padding: 4rem;
+    color: black;
+    font-size: 1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Style for the header */
+#receipt header {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+}
+
+#receipt h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+#receipt .description{
+    text-align: center;
+}
+#receipt .container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Style for the order details */
+#receipt h3 {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+}
+
+#receipt p {
+    margin: 5px 0;
+}
+
+/* Style for the delivery information and payment information */
+#receipt h3 + p {
+    margin-top: 0;
+}
+
+/* Style for the thank you message */
+#receipt p:last-of-type {
+    margin-top: 20px;
+    font-style: italic;
+}

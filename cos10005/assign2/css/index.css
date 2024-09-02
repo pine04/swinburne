@@ -1,0 +1,313 @@
+/*
+    Filename: index.css
+    Author: Ta Quang Tung
+    Description: Stylesheet for the index.html page.
+*/
+
+section {
+    padding: 6rem 4rem;
+}
+
+#splash,
+#menu {
+    background-color: #F9E4D4;
+    color: #9C0F48;
+}
+
+#history,
+#location {
+    background-color: #9C0F48;
+    color: #F9E4D4;
+}
+
+.content-wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 4em;
+}
+
+.text-wrapper {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+.image-wrapper {
+    flex-basis: 32rem;
+    flex-grow: 3;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.feature-image {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 1rem;
+}
+
+#splash h1 {
+    font-size: 3.375rem;
+}
+
+#splash-subtitle {
+    font-size: 1.5rem;
+}
+
+#splash-credit {
+    font-size: 1rem;
+}
+
+#splash-credit a {
+    color: #9C0F48;
+    font-style: italic;
+}
+
+#splash-to-menu {
+    display: block;
+    width: fit-content;
+    padding: .4rem .8rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    transition: background-color .2s ease-in-out;
+}
+
+#splash-to-menu:hover {
+    background-color: #470D21;
+}
+
+#history h2,
+#location h2 {
+    font-size: 3.375rem;
+    text-align: center;
+}
+
+#history p,
+#location p {
+    text-align: justify;
+}
+
+#history #history-credit,
+#location #location-credit {
+    text-align: center;
+}
+
+#history-credit a,
+#location-credit a {
+    color: #F9E4D4;
+    font-style: italic;
+}
+
+.main {
+    z-index: 3;
+}
+
+.underlay-1 {
+    z-index: 2;
+}
+
+.underlay-2 {
+    z-index: 1;
+}
+
+#history .main {
+    transform: translate(0, -50%) rotate(5deg);
+}
+
+#history .underlay-1 {
+    transform: translate(0, -50%) rotate(-5deg);
+}
+
+#history .underlay-2 {
+    transform: translate(0, -50%) rotate(-15deg);
+}
+
+#location .main {
+    transform: translate(0, -50%) rotate(-5deg);
+}
+
+#location .underlay-1 {
+    transform: translate(0, -50%) rotate(5deg);
+}
+
+#location .underlay-2 {
+    transform: translate(0, -50%) rotate(15deg);
+}
+
+@media only screen and (max-width: 48rem) {
+    section {
+        padding: 4rem 2rem;
+    }
+
+    #splash h1,
+    #splash p {
+        text-align: center;
+    }
+
+    #splash-to-menu {
+        margin: 0 auto;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image-wrapper {
+        flex-basis: 18rem;
+    }
+
+    .feature-image {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 20rem;
+    }
+
+    #history .main {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+
+    #history .underlay-1 {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    #history .underlay-2 {
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    #location .main {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    #location .underlay-1 {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+
+    #location .underlay-2 {
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+}
+
+#menu h2 {
+    font-size: 3.375rem;
+    text-align: center;
+}
+
+#ice-cream-images {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 32rem) {
+    #ice-cream-images {
+        gap: 1em;
+    }
+}
+
+.ice-cream-button {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #9C0F48;
+    position: relative;
+    transition: background-color .1s ease-in-out;
+}
+
+.ice-cream-button img {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ice-cream-button.active,
+.ice-cream-button:hover {
+    background-color: #D67D3E;
+}
+
+#previous,
+#next {
+    display: block;
+    width: 3rem;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+}
+
+#previous svg,
+#next svg {
+    display: block;
+    width: 100%;
+    fill: #9C0F48;
+    transition: fill .1s ease-in-out;
+}
+
+#previous:hover svg,
+#next:hover svg {
+    fill: #D67D3E;
+}
+
+#previous.inactive,
+#next.inactive {
+    pointer-events: none;
+}
+
+#previous.inactive svg,
+#next.inactive svg {
+    opacity: .5;
+}
+
+#ice-cream-information {
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+#ice-cream-information h3 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+#ice-cream-information h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#ice-cream-information p {
+    text-align: center;
+}
+
+#ice-cream-information #ice-cream-credit a {
+    color: #9C0F48;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#ice-cream-information #to-order {
+    display: block;
+    width: fit-content;
+    padding: .4rem .8rem;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    transition: background-color .2s ease-in-out;
+}
+
+#ice-cream-information #to-order:hover {
+    background-color: #470D21;
+}

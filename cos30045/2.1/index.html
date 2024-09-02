@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="COS30045 Lab 2.1" />
+    <meta name="author" content="Ta Quang Tung" />
+    <meta name="keywords" content="HTML, JS, D3" />
+
+    <title>Lab 2.1 - Creating paragraphs with D3 - COS30045</title>
+
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+
+<body>
+        <h1>Creating and Formatting Paragraph Elements with D3</h1>
+
+        <script>
+            const dataset = [14, 5, 26, 23, 9];
+
+            d3.select("body") // Selects the body element.
+                .selectAll("p") // Selects all "p" elements in body.
+                .data(dataset) // Associate the data set with the selection.
+                .enter() // Gets the "enter" selection (data items with no corresponding elements)
+                .append("p") // For each data item, creates a paragraph.
+                .text((d) => {
+                    // Changes the text based on the data.
+                    if (d >= 10) {
+                        return `Warning: Joe watched ${d} cat videos today.`;
+                    } else {
+                        return `Joe watched ${d} cat videos today.`;
+                    }
+                })
+                .classed("warning", d => d >= 10); // Styles the paragraph based on the data.
+
+            console.log(d3.selectAll("p")); // Used for debugging.
+        </script>
+
+        <footer>
+            COS30045 Data Visualisation <br>
+            Semester 1 2024
+        </footer>
+</body>
+
+</html>

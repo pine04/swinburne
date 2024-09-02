@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ta Quang Tung">
+    <meta name="description" content="Profile page for personal website.">
+    <meta name="keywords" content="ta quang tung, pine, profile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile - Pine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/desktop-styles.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./style/mobile-styles.css" media="screen and (max-width: 767px)">
+</head>
+
+<body>
+    <header id="navbar">
+        <a id="navbar-logo" href="./index.html"></a>
+        <img id="panel-opener" src="./images/arrow.png" alt="navbar open icon">
+        <div id="panel">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">Story</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><a href="./animations.html">Animations</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+    <main id="profile">
+        <article>
+            <h1>My profile</h1>
+            <section id="skills">
+                <h2>What I do</h2>
+                <p class="section-text-center">
+                    At present, I am focusing on my coding and language skills with the intention of becoming a
+                    proficient software developer who can work in any environment. I primarily work on front-end web
+                    development with the React.js framework, but I ocassionally work on the back-end with Express.js.
+                    As my speciality needs so much JavaScript, it is only natural that JS is my preferred
+                    programming language. As far as human language goes, I am quite proficient in English as my second
+                    language. I am planning to make Spanish my third, and I have just started out Spanish on Duolingo.
+                    ¿Quieres aprender español conmigo?
+                </p>
+                <div class="doodle-container">
+                    <img src="./images/javascript.png" alt="javascript logo">
+                    <img src="./images/react.png" alt="react logo">
+                    <img src="./images/spanish.png" alt="spanish flag">
+                </div>
+            </section>
+            <section id="music" class="section-dark">
+                <h2>A peek into my music library</h2>
+                <p class="section-text-center">
+                    I try to listen to as many genres of music as possible to expand my musical palette, but I am
+                    primarily a pop listener. I am a huge Swiftie and last year I spent more than 25,000 minutes on
+                    Spotify listening to Taylor. She is a phenomenal musical storyteller, and as an artist she is
+                    extremely versatile. Other than Taylor, I also listen to The 1975, ROSALÍA, Kacey Musgraves, Lorde,
+                    Beyoncé, Kendrick Lamar, and more. Here you can find a list of songs I cannot get enough of
+                    lately, as well as three of my all-time favorites.
+                </p>
+                <aside id="library-container">
+                    <div id="favorites">
+                        <p>
+                            <img src="./images/all-text.png" alt="all"> <img src="./images/too-text.png" alt="too"> <img
+                                src="./images/well-text.png" alt="well"> <img src="./images/by-text.png" alt="by"> <img
+                                src="./images/taylor-swift-text.png" alt="taylor swift"> <img src="./images/scarf.png" alt="scarf">
+                        </p>
+                        <hr>
+                        <p>
+                            <img src="./images/handfan.png" alt="handfan"> <img src="./images/kacey-musgraves-text.png" alt="kacey musgraves"> <img
+                                src="./images/possessive-s-text.png" alt="apostrophe s"> <img src="./images/slow-text.png" alt="slow"> <img
+                                src="./images/burn-text.png" alt="burn">
+                        </p>
+                        <hr>
+                        <p>
+                            <img src="./images/saoko-text.png" alt="saoko"> <img src="./images/by-text.png" alt="by"> <img
+                                src="./images/rosalia-text.png" alt="rosalia"> <img src="./images/helmet.png" alt="helmet">
+                        </p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/37i9dQZF1Epv01TbEewKww?utm_source=generator&theme=0"
+                            width="300" height="352" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </aside>
+            </section>
+            <section id="games">
+                <h2>Mis videojuegos favoritos</h2>
+                <p class="section-text-center">
+                    I used to play a lot of video games in secondary school. Some of the notable ones include Minecraft,
+                    Terraria, Stardew Valley, and League of Legends (the latter I have to quit because I developed an
+                    unhealthy obsession with it.) I guess we all eventually grow out of the things we once loved, just
+                    like they say. I have hardly any motivation to play video games anymore. However, two games still
+                    stick around with me to this day, which I ocassionally open up to play. They are Terraria and
+                    Stardew Valley. These are the only two games I would be willing to spend money on since I greatly
+                    admire the dedication the developers have put into perfecting their products.
+                </p>
+                <img id="top-picture" src="./images/eye-of-cthulhu.png" alt="eye of cthulhu">
+                <img id="bottom-picture" src="./images/tree.png" alt="terraria tree">
+            </section>
+            <section id="contact-form" class="section-dark">
+                <h2>Send me something</h2>
+                <img src="./images/letter.png" alt="letter picture">
+                <p class="section-text-center">
+                    Ask me questions or send me any music/book/game/film recommendations here! Alternatively, you can
+                    directly contact me via <a href="mailto:tunggnut2004@gmail.com">tunggnut2004@gmail.com</a>!
+                </p>
+                <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+                    <label>
+                        Email:
+                        <input type="email" placeholder="Your email" name="email">
+                    </label>
+                    <label>
+                        Ask me a question:
+                        <textarea 
+                            name="questions"
+                            placeholder="Can I ask you a question? Did you ever have someone kiss you in a crowded room?"></textarea>
+                    </label>
+                    <label>
+                        Recommend me something:
+                        <textarea 
+                            name="recommendations" 
+                            placeholder="I am open to all types ;)"></textarea>
+                    </label>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer id="footer">
+        <img id="footer-logo" src="./images/pine-tree-footer.png" alt="pine tree logo">
+        <p>Made by Pine. All rights reserved.</p>
+        <nav id="sitemap">
+            <p>Sitemap</p>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Story</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./animations.html">Animations</a></li>
+            </ul>
+        </nav>
+        <nav id="socials">
+            <p>Socials</p>
+            <ol>
+                <li><a id="footer-facebook" href="https://www.facebook.com/gnutgnutgnut" target="_blank"></a></li>
+                <li><a id="footer-twitter" href="https://twitter.com/gnut2004" target="_blank"></a></li>
+                <li><a id="footer-instagram" href="https://www.instagram.com/gnutgnutgnutgnut" target="_blank"></a></li>
+            </ol>
+        </nav>
+    </footer>
+</body>
+
+</html>

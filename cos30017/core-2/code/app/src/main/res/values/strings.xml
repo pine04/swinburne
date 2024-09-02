@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Core 3 - Bookshare</string>
+    <string name="book_1_name">Outlive - The Science and Art of Longevity</string>
+    <string name="book_1_description">Wouldn\'t you like to live longer? And better? In this operating manual for longevity, Dr. Peter Attia draws on the latest science to deliver innovative nutritional interventions, techniques for optimizing exercise and sleep, and tools for addressing emotional and mental health.</string>
+    <string name="book_2_name">Dune</string>
+    <string name="book_2_description">Set on the desert planet Arrakis, Dune is the story of Paul Atreides—who would become known as Muad\'Dib—and of a great family\'s ambition to bring to fruition humankind\'s most ancient and unattainable dream.</string>
+    <string name="book_3_name">Atomic Habits</string>
+    <string name="book_3_description">No matter your goals, Atomic Habits offers a proven framework for improving—every day. James Clear, one of the world\'s leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.</string>
+    <string name="book_4_name">A Court of Thorns and Roses</string>
+    <string name="book_4_description">From bestselling author Sarah J. Maas comes a seductive, breathtaking book that blends romance, adventure, and faerie lore into an unforgettable read.</string>
+    <string name="book_image">Book image</string>
+    <string name="hardcover">Hardcover</string>
+    <string name="fiction">Fiction</string>
+    <string name="english">English</string>
+    <string name="rent">Rent</string>
+    <string name="next">Next</string>
+    <string name="you_are_now_renting">You are now renting %1$s</string>
+    <string name="total_cost">Total cost: $%1$s</string>
+    <string name="confirm">Confirm</string>
+    <string name="how_many_days">How many days would you like to rent this book for? (You can choose up to 7 days.)</string>
+    <string name="good_choice">Good choice!</string>
+    <string name="unknown_book">Unknown Book</string>
+    <string name="cancel">Cancel</string>
+    <string name="due_back">Due back %1$s</string>
+    <string name="cost">$%1$s</string>
+    <string name="rent_cancelled">Rent has been cancelled.</string>
+    <string name="rent_successful">Rented successfully. Due date: %1$s</string>
+    <string name="zero_days_disallowed">You cannot rent for 0 days.</string>
+    <string name="slider_content_description">Slider to select number of days.</string>
+</resources>

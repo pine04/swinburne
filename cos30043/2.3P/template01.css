@@ -1,0 +1,9 @@
+.profile-picture {
+    width: 96px;
+    height: 96px;
+}
+
+.footer-link-list {
+    list-style: none;
+    padding: 0;
+}

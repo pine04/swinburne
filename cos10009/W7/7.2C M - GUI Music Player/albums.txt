@@ -1,0 +1,65 @@
+4
+Melodrama
+Lorde
+./images/lorde-melodrama.png
+6
+Green Light
+./tracks/melodrama/1-green-light.mp3
+Sober
+./tracks/melodrama/2-sober.mp3
+Homemade Dynamite
+./tracks/melodrama/3-homemade-dynamite.mp3
+The Louvre
+./tracks/melodrama/4-the-louvre.mp3
+Liability
+./tracks/melodrama/5-liability.mp3
+Hard Feelings/Loveless
+./tracks/melodrama/6-hard-feelings-loveless.mp3
+Midnights
+Taylor Swift
+./images/taylor-swift-midnights.png
+6
+Lavender Haze
+./tracks/midnights/1-lavender-haze.mp3
+Maroon
+./tracks/midnights/2-maroon.mp3
+Anti-Hero
+./tracks/midnights/3-anti-hero.mp3
+Snow On The Beach (feat. Lana Del Rey)
+./tracks/midnights/4-snow-on-the-beach.mp3
+You're On Your Own, Kid
+./tracks/midnights/5-you-are-on-your-own-kid.mp3
+Midnight Rain
+./tracks/midnights/6-midnight-rain.mp3
+Being Funny In A Foreign Language
+The 1975
+./images/the-1975-being-funny-in-a-foreign-language.png
+6
+The 1975
+./tracks/bfiafl/1-the-1975.mp3
+Happiness
+./tracks/bfiafl/2-happiness.mp3
+Looking For Somebody (To Love)
+./tracks/bfiafl/3-looking-for-somebody-to-love.mp3
+Part Of The Band
+./tracks/bfiafl/4-part-of-the-band.mp3
+Oh Caroline
+./tracks/bfiafl/5-oh-caroline.mp3
+I'm In Love With You
+./tracks/bfiafl/6-im-in-love-with-you.mp3
+Lemonade
+Beyoncé
+./images/beyonce-lemonade.png
+6
+Pray You Catch Me
+./tracks/lemonade/1-pray-you-catch-me.mp3
+Hold Up
+./tracks/lemonade/2-hold-up.mp3
+Don't Hurt Yourself (feat. Jack White)
+./tracks/lemonade/3-dont-hurt-yourself.mp3
+Sorry
+./tracks/lemonade/4-sorry.mp3
+6 Inch (feat. The Weeknd)
+./tracks/lemonade/5-six-inch.mp3
+Daddy Lessons
+./tracks/lemonade/6-daddy-lessons.mp3

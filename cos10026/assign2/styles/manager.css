@@ -1,0 +1,176 @@
+/*
+    filename: manager.css
+    author: Nguyen Thanh Trung, Pham Hung Manh, Ta Quang Tung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for manager.php and edit_order.php pages.
+*/
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+#manage, #manage * {
+    box-sizing: border-box;
+}
+
+#manage {
+    min-width: 0;
+    padding: 4rem;
+    font-family: "DM Sans", sans-serif;
+    color: #343A40;
+}
+
+#manage > p {
+    text-align: center;
+}
+
+#manage > p > a {
+    color: #343A40;
+}
+
+#manage input, #manage select {
+    font-family: "DM Sans", sans-serif;
+}
+
+#title {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.Sorting {
+    padding: 20px;
+}
+
+.confirmButton {
+    height: fit-content;
+}
+
+.error {
+    text-align: center;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.data_table {
+    display: block;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+#manage td, #manage th {
+    padding: .4rem .8rem;
+}
+
+.update_btn {
+    text-decoration: none;
+    display: block;
+    padding: 0.4em 0.8em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #DEE2E6;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+
+.update_btn:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+.deleteButton {
+    display: block;
+    font-size: 1rem;
+    padding: 0.4em 0.8em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #DEE2E6;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+
+.deleteButton:disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.deleteButton:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+.update_title {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+.container_edit {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn_edit {
+    display: flex;
+    gap: 2rem;
+    padding-top: 20px;
+    font-family: "DM Sans", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.cancel_link {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    padding: 0.4em 0.8em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #DEE2E6;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+
+.cancel_link:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+.confirmButton {
+    display: block;
+    font-size: 1rem;
+    padding: 0.4em 0.8em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #DEE2E6;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+    font-family: "DM Sans", sans-serif;
+}
+
+.confirmButton:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+
+
+

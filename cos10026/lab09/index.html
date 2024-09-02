@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ta Quang Tung">
+    <meta name="description" content="Lab 9 database results">
+    <meta name="keywords" content="mysql">
+    <title>Lab 9 - Database Access</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Lab 9 - Database Access</h1>
+    <h2>Creating a table</h2>
+    <p>Initially, the database s104222196_db is empty, as can be seen in this picture.</p>
+    <img alt="result" src="./images/no-table.jpg">
+    <p>Running the below query creates a table named 'cars'.</p>
+    <pre>
+CREATE TABLE cars (
+    car_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    make VARCHAR(25) NOT NULL,
+    model VARCHAR(40) NOT NULL,
+    price FLOAT NOT NULL,
+    yom INT NOT NULL
+);
+    </pre>
+    <img alt="result" src="./images/table-created.jpg">
+    <h2>Adding data</h2>
+    <p>Running the below query adds the first record to the table 'cars'.</p>
+    <pre>
+INSERT INTO cars (car_id, make, model, price, yom) VALUES (NULL, 'BMW', 'X3', 35000, 2010);
+    </pre>
+    <img alt="result" src="./images/table-first-record.jpg">
+    <p>Running the below query adds the rest of the data into the table.</p>
+    <pre>
+INSERT INTO cars (car_id, make, model, price, yom) VALUES
+    (NULL, 'Holden', 'Astra', 14000, 2009),
+    (NULL, 'Ford', 'Falcon', 39000, 2013),
+    (NULL, 'Toyota', 'Corolla', 20000, 2012),
+    (NULL, 'Holden', 'Commodore', 13500, 2005),
+    (NULL, 'Holden', 'Astra', 8000, 2004),
+    (NULL, 'Holden', 'Commodore', 28000, 2009),
+    (NULL, 'Ford', 'Falcon', 14000, 2011),
+    (NULL, 'Ford', 'Falcon', 7000, 2003),
+    (NULL, 'Ford', 'Laser', 10000, 2010);
+    </pre>
+    <img alt="result" src="./images/table-complete.jpg">
+    <h2>Querying the table</h2>
+    <p>Get all records and fields from the table: <code>SELECT * FROM cars;</code></p>
+    <img alt="result" src="./images/select-1.jpg">
+    <p>Select make, model, and price, sorted by make and model: <code>SELECT make, model, price FROM cars ORDER BY make, model;</code></p>
+    <img alt="result" src="./images/select-2.jpg">
+    <p>Select make and model of the cars which cost $20,000.00 or more: <code>SELECT make, model FROM cars WHERE price >= 20000;</code></p>
+    <img alt="result" src="./images/select-3.jpg">
+    <p>Get the average price of cars for similar make: <code>SELECT AVG(price) FROM cars GROUP BY make;</code></p>
+    <img alt="result" src="./images/select-4.jpg">
+    <p>Get the make and model of the cars which cost below $15,000.00: <code>SELECT make, model FROM cars WHERE price &lt; 15000;</code></p>
+    <img alt="result" src="./images/select-5.jpg">
+    <p>Get the average price of FORD cars: <code>SELECT AVG(price) FROM cars WHERE make = 'FORD';</code></p>
+    <img alt="result" src="./images/select-6.jpg">
+    <p>Get cars manufactured in 2010 or later and costing $15,000 or more: <code>SELECT * FROM cars WHERE yom >= 2010 AND price >= 15000;</code></p>
+    <img alt="result" src="./images/select-7.jpg">
+</body>
+
+</html>

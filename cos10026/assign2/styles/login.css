@@ -1,0 +1,95 @@
+/*
+    filename: login.css
+    author: Ta Quang Tung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for login.php, change_password.php, manager_login.php, manager_register.php, and process_change_password.php pages.
+*/
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+#login, #login * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login {
+    padding: 4rem;
+    font-family: "DM Sans", sans-serif;
+    color: #343A40;
+}
+
+#login h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#login h1, #login > p {
+    text-align: center;
+}
+
+#login p.error {
+    margin: 1rem 0;
+    color: red;
+}
+
+#login p.success {
+    margin: 1rem 0;
+    color: green;
+}
+
+#login form {
+    width: 100%;
+    max-width: 16rem;
+    margin: 0 auto;
+}
+
+#login label {
+    display: block;
+    margin: 1rem 0;
+}
+
+#login input {
+    display: block;
+    width: 100%;
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+    border: solid 1px #212529;
+    font-family: "DM Sans", sans-serif;
+}
+
+#login input.error {
+    border: solid 2px red;
+}
+
+#login input[type="submit"] {
+    margin: 1rem auto;
+    width: fit-content;
+    font-size: 1.25rem;
+    background-color: #DEE2E6;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#login input[type="submit"]:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+#login a {
+    color: #343A40;
+}
+
+.error-message {
+    text-align: left;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

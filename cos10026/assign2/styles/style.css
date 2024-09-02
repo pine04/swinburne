@@ -1,0 +1,301 @@
+/*
+    filename: style.css
+    author: Ta Quang Tung, Nguyen Quang Huy, Nguyen Thanh Trung, Nguyen Tran Quang Minh, Pham Hung Manh
+    created: 11/02/23
+    last modified: 08/04/23
+    description: General styling for all pages.
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------- RULESETS FOR NAVIGATION BAR ----------------------- */
+
+#navbar,
+#navbar * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    background-color: transparent;
+}
+
+#navbar #navbar-logo {
+    margin-left: 10px;
+    display: block;
+    width: 125px;
+    height: 125px;
+}
+
+#navbar #navbar-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar #navbar-opener {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+#navbar #navbar-opener svg {
+    display: block;
+    width: 2em;
+    height: 2em;
+}
+
+#navbar #navbar-opener svg path {
+    fill: #343A40;
+}
+
+#navbar #nav-container {
+    padding: 0 60px;
+    flex-grow: 1;
+}
+
+#navbar #nav-container nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+#navbar #nav-container nav ul li:nth-child(8) {
+    margin-left: auto;
+}
+
+#navbar #nav-container nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #343A40;
+}
+
+/* The following 2 rulesets are used to create the underline effect when the navigation links are hovered on. */
+#navbar #nav-container nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #343A40;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+#navbar #nav-container nav ul li a:hover:after {
+    transform: scale(1);
+}
+
+#navbar #nav-container nav p {
+    display: none;
+    color: #343A40
+}
+
+#navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    line-height: 2em;
+    z-index: 1;
+    float: left;
+}
+
+#navbar .dropdown-content a {
+    float: none;
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 4em;
+    width: 600px;
+    text-align: center;
+}
+
+#navbar .dropdown:hover .dropdown-content {
+    display: block;
+    left: 150px;
+    top: 75px;
+    background-color: #d7d6de;
+    border-radius: 1em;
+}
+
+#navbar .navpic {
+    width: auto;
+    height: 120px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1em;
+}
+
+#navbar .dropdown-content a:hover {
+    background-color: #ADB5BD;
+    border-radius: 0.5em;
+    content: none;
+}
+
+@media screen and (max-width: 82rem) {
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #navbar #nav-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        max-width: 32rem;
+        height: 100vh;
+        overflow: hidden;
+        /* On small screens, this nav container will be on top of the trigger button. */
+        /* pointer-events: none tells the browser to ignore mouse events on the container, allowing hover events on the button to be fired. */
+        pointer-events: none;
+    }
+
+    #navbar #nav-container nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 2em;
+        background-color: #CED4DA;
+        transform: translate(100%);
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #navbar #nav-container nav ul {
+        display: block;
+    }
+
+    #navbar #nav-container nav ul li {
+        margin: 1em 0;
+    }
+    
+    #navbar #nav-container nav ul li:nth-child(8) {
+        margin-top: 3em;
+    }
+
+    #navbar #nav-container nav p {
+        display: block;
+    }
+
+    #navbar #navbar-opener {
+        display: block;
+        margin-right: 2em;
+    }
+
+    /* 
+        This ruleset is applied to the nav container (which is a div) when: 
+        - The trigger button is hovered on.
+        - The nav container is hovered on.
+    */
+    #navbar #navbar-opener:hover+#nav-container,
+    #navbar #nav-container:hover {
+        pointer-events: all;
+    }
+
+    /* 
+        This ruleset is applied to the nav element itself when: 
+        - The trigger button is hovered on.
+        - The nav container is hovered on.
+    */
+    #navbar #navbar-opener:hover+#nav-container nav,
+    #navbar #nav-container:hover nav {
+        transform: none;
+    }
+
+    /* to hide the hover bar of the product */
+    #navbar .dropdown:hover .dropdown-content {
+        display: none
+    }
+}
+
+/* -------------- RULESETS FOR FOOTER ----------------------- */
+
+#footer,
+#footer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #DEE2E6;
+    color: #343A40;
+}
+
+#footer {
+    padding: 3em 2em;
+    clear: both;
+}
+
+#footer h2,
+#footer h3 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#footer h2 {
+    font-size: 1.25em;
+}
+
+#footer h3 {
+    font-size: 1em;
+    margin-top: 0.75em;
+}
+
+#footer p {
+    font-size: 0.75em;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    margin-top: 0.75em;
+}
+
+#footer a {
+    display: block;
+    font-size: 0.75em;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #6C757D;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em 0.75em;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#footer svg {
+    width: 2em;
+    height: 2em;
+}
+
+/* To change the color of an svg path, the fill property is used instead of color. */
+#footer svg path {
+    fill: #343A40;
+}
+
+#footer a:hover svg path {
+    fill: #6C757D;
+}

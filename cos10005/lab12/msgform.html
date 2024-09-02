@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Web development">
+	<meta name="keywords" content="Message Form">
+	<meta name="author" content="Ta Quang Tung">
+	<link href="msgform.css" rel="stylesheet" type="text/css">
+	<script src="validation.js"></script>
+	<title>Web Development Message Form</title>
+</head>
+
+<body>
+	<h1 class="center">Web Development</h1>
+	<form id="msgform" method="post" action="./msgform.php">
+		<div>
+			<label for="message">Message:</label>
+			<input type="text" id="message" name="message">
+		</div>
+		<div>
+			<label for="student-id">Student ID:</label>
+			<input type="text" id="student-id" name="student-id">
+		</div>
+		<input type="submit" value="POST">
+	</form>
+	<p class="center">Post your message</p>
+</body>
+
+</html>

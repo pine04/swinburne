@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ta Quang Tung">
+        <meta name="description" content="Helpdesk form">
+        <meta name="keywords" content="form,html,helpdesk">
+        <title>CWA Help Desk Appointment</title>
+        <style>
+            article {
+                max-width: 700px;
+                max-width: fit-content;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <a href="http://www.swin.edu.au" target="_blank">
+                <img src="./public/images/logo.png" alt="Swinburne logo">
+            </a>
+            <h1>CWA Help Desk Appointment</h1>
+            <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+            <p>Check Blackboard for when CWA tutors will be there.</p>
+    
+            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset>
+                    <legend>Student details</legend>
+                    <p>
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="studentID" pattern="\d{7,10}" required="required">
+                    </p>
+                    <p>
+                        <label for="given-name">Given name</label>
+                        <input type="text" id="given-name" name="givenName" pattern="[a-zA-Z]+" required="required" maxlength="15">
+                        <label for="family-name">Family name</label>
+                        <input type="text" id="family-name" name="familyName" pattern="[a-zA-Z]+" required="required" maxlength="15">
+                    </p>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Your unit</legend>
+                    <input type="radio" name="unit" id="cos10011" value="COS10011" required="required">
+                    <label for="cos10011">COS10011</label>
+                    <input type="radio" name="unit" id="cos60004" value="COS60004">
+                    <label for="cos60004">COS60004</label>
+                    <input type="radio" name="unit" id="cos60007" value="COS60007">
+                    <label for="cos60007">COS60007</label>
+                    <p>
+                        <label for="tutor">Your Tutor</label>
+                        <select name="tutor" id="tutor" required="required">
+                            <option value="">Please Select</option>
+                            <option value="taylor swift">Taylor Swift</option>
+                            <option value="adele">Adele</option>
+                            <option value="beyonce">Beyoncé</option>
+                        </select>
+                    </p>
+                </fieldset>
+    
+                
+                <fieldset>
+                    <legend>Issue</legend>
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="html" name="issues[]" value="html" checked>
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="css" name="issues[]" value="css">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" id="js" name="issues[]" value="javascript">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" id="php" name="issues[]" value="php">
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" id="mysql" name="issues[]" value="mysql">
+                    <p>
+                        <label for="description">Description of Issue</label>
+                        <p>
+                            <textarea id="description" name="description" placeholder="Write description of your problem here..."></textarea>
+                        </p>
+                    </p>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Preferred Date / Time</legend>
+                    <p>
+                        <label for="date">Date</label>
+                        <!-- This regexp pattern eliminates impossible dates such as 30/02/2023 or 32/1/2023. It also accounts for leap years, i.e. 29/02/2020 is allowed but 29/02/2023 is not. -->
+                        <input type="type" id="date" name="date" pattern="^([01]?\d|2[0-8])/(0?[1-9]|1[0-2])/\d{4}$|^(29|30)/(0?[13-9]|1[0-2])/\d{4}$|^29/0?2/\d{2}([02468][048]|[13579][26])$|^31/(0?[13578]|1[02])/\d{4}$" placeholder="dd/mm/yyyy">
+                    </p>
+                    <p>
+                        <label for="time">Time</label>
+                        <input type="text" id="time" name="time" pattern="([01]\d|2[0-3]):[0-5]\d" placeholder="00:00">
+                    </p>
+                </fieldset>
+    
+                <input type="submit" value="Book">
+                <input type="reset" value="Reset form">
+            </form>
+        </article>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+/*
+    filename: index.css
+    author: Nguyen Thanh Trung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for index.php page.
+*/
+
+#home {
+    margin: 0;
+    padding: 0;
+}
+
+#home h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+#home * {
+    font-family: 'DM Sans', sans-serif;
+}
+
+#home .container {
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/background.jpg");
+    background-position: left;
+    background-size: cover;
+    border: none;
+    overflow: hidden;
+}
+
+#home .thumbnail-section {
+    padding: 15px;
+    background-color: #343A40;
+}
+
+#home .container2 {
+    display: flex;
+    background-clip: content-box;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+#home .des {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#home .des h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #343A40;
+}
+
+#home .des p {
+    padding-top: 15px;
+    font-size: 15px;
+    color: #403D39;
+}
+
+#home .des .product {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #212529;
+    background-color: #CED4DA;
+    border-radius: .5em;
+    transition: all 0.2s ease-in-out;
+}
+
+#home .des .product:hover {
+    color: #E9ECEF;
+    background-color: #212529;
+}
+
+#home .des2 {
+    margin-top: 20%;
+    margin-left: 10%;
+    color: #403D39;
+    font-weight: bold;
+}
+
+#home .des2 a {
+    color: #403D39;
+    font-style: italic;
+}
+
+#home .item-thumbnail {
+    transform: scale(0.5);
+    border: 5px solid lightblue;
+    outline: 3px solid lightblue;
+    outline-offset: 85px;
+    width: 350px;
+    height: 350px;
+}
+
+#home .footercontent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+
+}
+
+#home .social li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    right: 24px;
+}
+
+#home .social li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1500px) {
+    #home .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    #home .item-thumbnail {
+        width: 192px;
+        height: 192px;
+    }
+}
+
+@media screen and (max-width:725px) {
+    #home .container {
+        background: none;
+    }
+
+    #home .container3 {
+        background-color: darkgrey;
+        overflow: hidden;
+    }
+
+    #home .container2 {
+        background-color: #343A40;
+        display: block;
+        padding: 0px;
+        max-width: 38em;
+        margin: 0 auto;
+    }
+
+    #home .des {
+        margin-top: 10%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    #home .item-thumbnail {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        outline-offset: 0px;
+        position: relative;
+        padding: 0px;
+        width: 192px;
+        height: 192px;
+    }
+}

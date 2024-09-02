@@ -1,0 +1,102 @@
+/*
+    filename: enhancements.css
+    author: Ta Quang Tung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for enhancements.php and enhancements2.php pages.
+*/
+
+#enhancements,
+#enhancements * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#enhancements {
+    padding: 2rem;
+    color: #252422;
+    font-family: "DM Sans", sans-serif;
+}
+
+#enhancements section {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+#enhancements #subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#enhancements h1,
+#enhancements h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#enhancements h1 {
+    font-size: 2em;
+    margin: 1.5em 0;
+}
+
+#enhancements h2 {
+    font-size: 1.5em;
+    margin: 1.125em 0;
+}
+
+#enhancements p {
+    font-size: 1em;
+    margin: 0.75em 0;
+    text-align: justify;
+}
+
+#enhancements code {
+    font-family: monospace;
+    padding: .2em .4em;
+    background-color: #E9ECEF;
+    border-radius: .25rem;
+}
+
+#enhancements a {
+    text-decoration: underline;
+    font-style: italic;
+    color: #212529;
+}
+
+#enhancements figure {
+    width: 100%;
+    max-width: 48em;
+    margin: 1em auto;
+    background-color: #E9ECEF;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#enhancements figure a {
+    display: block;
+    width: 100%;
+    max-height: 12em;
+    overflow: hidden;
+}
+
+#enhancements figure img {
+    display: block;
+    width: 100%;
+}
+
+#enhancements figcaption {
+    text-align: center;
+}
+
+#enhancements pre {
+    background-color: #E9ECEF;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+    max-height: 30em;
+    overflow: auto;
+}

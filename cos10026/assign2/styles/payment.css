@@ -1,0 +1,136 @@
+/*
+    filename: payment.css
+    author: Nguyen Tran Quang Minh, Nguyen Quang Huy
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for payment.php and fix_order.php pages.
+*/
+
+#enquiry {
+    color: black;
+    font-size: 1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+#enquiry h1,
+#enquiry h2,
+#enquiry h3,
+#enquiry h4,
+#enquiry h5,
+#enquiry h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#enquiry p {
+    margin-bottom: 1rem;
+}
+
+#enquiry .error-message {
+    color: red;
+}
+
+#enquiry header {
+    text-align: center;
+}
+
+#enquiry #container {
+    background-color: #f8f9fa;
+    padding: 2em;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #dbd4d4;
+}
+
+
+/*set-up the input box for the item in the form*/
+#enquiry input[type="text"],
+#enquiry input[type="password"],
+#enquiry input[type="email"],
+#enquiry input[type="number"],
+#enquiry select,
+#enquiry textarea {
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    margin: 0.3em 0 1em 0;
+    display: block;
+    border: none;
+    width: 80%;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #dbd4d4;
+}
+
+/*disable the outline display when the client click the box*/
+#enquiry input[type="text"],
+#enquiry input[type="password"],
+#enquiry input[type="email"],
+#enquiry input[type="number"],
+#enquiry select,    
+#enquiry textarea :focus {
+    outline: none;
+}
+
+/*Style the fieldset element of the form*/
+#enquiry fieldset {
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #dbd4d4;
+    margin-bottom: 19px;
+}
+
+/*Change the cursor to pointer when the clients hover the label*/
+#enquiry label {
+    cursor: pointer;
+}
+
+/*style the submit button*/
+#enquiry #submitbtn {
+    font-family: "DM Sans", sans-serif;
+    background-color: #dee2e6;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+#enquiry #submitbtn:hover {
+    transform: scale(0.98);
+    background-color: #ba2c2c;
+    box-shadow: 4px 4px 10px #dbd4d4;
+    color: white;
+}
+
+#enquiry .control-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#enquiry .error{
+    color: #ba2c2c;
+}
+
+/*media queries for smaller screen*/
+@media screen and (max-width: 500px) {
+    #enquiry #container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    #enquiry .control-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #enquiry #container {
+        max-width: 60%;
+    }
+}

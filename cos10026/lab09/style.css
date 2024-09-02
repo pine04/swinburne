@@ -1,0 +1,10 @@
+p, code, pre {
+    font-size: 1.25rem;
+}
+
+img {
+    display: block;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: .5em;
+}

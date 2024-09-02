@@ -1,0 +1,52 @@
+main {
+    max-width: 1024px;
+    margin: 4rem auto;
+}
+
+h1, h2 {
+    color: #333; /* Set header text color to black */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.interview-book {
+    margin-top: 2rem;
+}

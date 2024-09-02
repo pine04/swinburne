@@ -1,0 +1,6 @@
+4x5
+clean clean dirty nil
+dirty clean clean clean
+dirty dirty nil clean
+clean clean clean clean
+dirty clean dirty dirty

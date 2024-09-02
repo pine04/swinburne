@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Smart Home Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="//d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="mx-5 my-4">Welcome to your Smart Home!</h1>
+
+    <h2 class="mx-5 my-4">Realtime Temperature Data</h2>
+    <div id="chart"></div>
+    <p id="tempSummary" class="mx-5 my-4 fs-3">Min: 0; Max: 0; Mean: 0 (degrees Celcius)</p>
+
+    <h2 class="mx-5 my-4">Recent Human Presence Data</h2>
+    <ul id="presenceEventList" class="mx-5 my-4">
+        <li>No data yet.</li>
+    </ul>
+
+    <h2 class="mx-5 my-4">Device settings and controls</h2>
+    <div id="form" class="mx-5 my-4">
+        <form @submit="handleSubmit">
+            <button type="button" @click="getSettingsData" class="btn btn-secondary">Refresh</button>
+
+            <fieldset class="mx-5 my-4">
+                <legend>Light</legend>
+                <label class="d-block">
+                    <input type="checkbox" name="lightManual" v-model="lightManual"> Manually control light
+                </label>
+                <label class="d-block">
+                    Temperature threshold to change color:
+                    <input type="number" name="lightTmpThreshold" v-model="lightTmpThreshold" step=".01">
+                </label>
+                <label class="d-block">
+                    <input type="checkbox" name="lightOn" v-model="lightOn"> On
+                </label>
+                <p class="fw-bold">Color:</p>
+                <label class="d-block">
+                    <input type="range" name="red" min="0" max="255" v-model="red"> Red ({{red}})
+                </label>
+                <label class="d-block">
+                    <input type="range" name="green" min="0" max="255" v-model="green"> Green ({{green}})
+                </label>
+                <label class="d-block">
+                    <input type="range" name="blue" min="0" max="255" v-model="blue"> Blue ({{blue}})
+                </label>
+            </fieldset>
+
+            <fieldset class="mx-5 my-4">
+                <legend>Fan</legend>
+                <label class="d-block">
+                    <input type="checkbox" name="fanManual" v-model="fanManual"> Manually control fan
+                </label>
+                <label class="d-block">
+                    Temperature threshold for Medium speed: <input type="number" name="mediumTmpThreshold"
+                        v-model="mediumTmpThreshold" step=".01">
+                </label>
+                <label class="d-block">
+                    Temperature threshold for High speed: <input type="number" name="highTmpThreshold"
+                        v-model="highTmpThreshold" step=".01">
+                </label>
+                <label class="d-block">
+                    <input type="checkbox" name="fanOn" v-model="fanOn"> On
+                </label>
+                <p class="fw-bold">Fan speed:</p>
+                <label class="d-block">
+                    <input type="radio" name="fanSpeed" value="LOW" v-model="fanSpeed"> Low
+                </label>
+                <label class="d-block">
+                    <input type="radio" name="fanSpeed" value="MED" v-model="fanSpeed"> Medium
+                </label>
+                <label class="d-block">
+                    <input type="radio" name="fanSpeed" value="HIGH" v-model="fanSpeed"> High
+                </label>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Update settings</button>
+        </form>
+    </div>
+
+    <script src="charts.js"></script>
+    <script src="index.js"></script>
+
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    lightManual: false,
+                    lightTmpThreshold: 30.0,
+                    lightOn: false,
+                    red: 255,
+                    green: 255,
+                    blue: 255,
+                    fanManual: false,
+                    mediumTmpThreshold: 20,
+                    highTmpThreshold: 25,
+                    fanOn: false,
+                    fanSpeed: "LOW"
+                }
+            },
+            methods: {
+                async handleSubmit(e) {
+                    e.preventDefault();
+
+                    console.log(this.$data);
+
+                    try {
+                        const options = {
+                            method: "PUT",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                lightManual: this.lightManual ? 1 : 0,
+                                lightTmpThreshold: this.lightTmpThreshold,
+                                lightOn: this.lightOn ? 1 : 0,
+                                red: this.red,
+                                green: this.green,
+                                blue: this.blue,
+                                fanManual: this.fanManual ? 1 : 0,
+                                mediumTmpThreshold: this.mediumTmpThreshold,
+                                highTmpThreshold: this.highTmpThreshold,
+                                fanOn: this.fanOn ? 1 : 0,
+                                fanSpeed: this.fanSpeed
+                            })
+                        };
+
+                        const res = await fetch("/assignment_2/device_settings.php", options);
+                        alert("Settings updated!");
+                    } catch (error) {
+                        console.log(error);
+                    }
+                },
+                async getSettingsData() {
+                    try {
+                        const res = await fetch("/assignment_2/device_settings.php");
+                        const settings = await res.json();
+                        console.log(settings);
+
+                        this.lightManual = !!+settings["LightManual"];
+                        this.lightTmpThreshold = settings["LightTmpThreshold"];
+                        this.lightOn = !!+settings["LightOn"];
+                        this.red = settings["Red"];
+                        this.green = settings["Green"];
+                        this.blue = settings["Blue"];
+                        this.fanManual = !!+settings["FanManual"];
+                        this.mediumTmpThreshold = settings["MediumTmpThreshold"];
+                        this.highTmpThreshold = settings["HighTmpThreshold"];
+                        this.fanOn = !!+settings["FanOn"];
+                        this.fanSpeed = settings["FanSpeed"];
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            },
+            mounted: function() {
+                this.getSettingsData();
+
+            }
+        }).mount("#form");
+    </script>
+</body>
+
+</html>

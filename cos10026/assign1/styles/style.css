@@ -1,0 +1,1030 @@
+/*
+    filename: style.css
+    author: Ta Quang Tung, Nguyen Quang Huy, Nguyen Thanh Trung, Nguyen Tran Quang Minh, Pham Hung Manh
+    created: 11/02/23
+    last modified: 21/02/23
+    description: Stylesheet for all pages of Assignment 1.
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------- RULESETS FOR NAVIGATION BAR ----------------------- */
+
+#navbar,
+#navbar * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    background-color: transparent;
+}
+
+#navbar #navbar-logo {
+    margin-left: 10px;
+    display: block;
+    width: 125px;
+    height: 125px;
+}
+
+#navbar #navbar-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar #navbar-opener {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+#navbar #navbar-opener svg {
+    display: block;
+    width: 2em;
+    height: 2em;
+}
+
+#navbar #navbar-opener svg path {
+    fill: #343A40;
+}
+
+#navbar #nav-container {
+    margin-left: 60px;
+    width: fit-content;
+}
+
+#navbar #nav-container nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+#navbar #nav-container nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #343A40;
+}
+
+/* The following 2 rulesets are used to create the underline effect when the navigation links are hovered on. */
+#navbar #nav-container nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #343A40;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+#navbar #nav-container nav ul li a:hover:after {
+    transform: scale(1);
+}
+
+#navbar #nav-container nav p {
+    display: none;
+    color: #343A40
+}
+
+#navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    line-height: 2em;
+    z-index: 1;
+    float: left;
+}
+
+#navbar .dropdown-content a {
+    float: none;
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 4em;
+    width: 600px;
+    text-align: center;
+}
+
+#navbar .dropdown:hover .dropdown-content {
+    display: block;
+    left: 150px;
+    top: 75px;
+    background-color: #d7d6de;
+    border-radius: 1em;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ADB5BD;
+    border-radius: 0.5em;
+    content: none;
+}
+
+@media screen and (max-width: 44em) {
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #navbar #nav-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        overflow: hidden;
+        /* On small screens, this nav container will be on top of the trigger button. */
+        /* pointer-events: none tells the browser to ignore mouse events on the container, allowing hover events on the button to be fired. */
+        pointer-events: none;
+    }
+
+    #navbar #nav-container nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 2em;
+        background-color: #CED4DA;
+        transform: translate(100%);
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #navbar #nav-container nav ul {
+        display: block;
+    }
+
+    #navbar #nav-container nav ul li {
+        margin: 1em 0;
+    }
+
+    #navbar #nav-container nav p {
+        display: block;
+    }
+
+    #navbar #navbar-opener {
+        display: block;
+        margin-right: 2em;
+    }
+
+    /* 
+        This ruleset is applied to the nav container (which is a div) when: 
+        - The trigger button is hovered on.
+        - The nav container is hovered on.
+    */
+    #navbar #navbar-opener:hover+#nav-container,
+    #navbar #nav-container:hover {
+        pointer-events: all;
+    }
+
+    /* 
+        This ruleset is applied to the nav element itself when: 
+        - The trigger button is hovered on.
+        - The nav container is hovered on.
+    */
+    #navbar #navbar-opener:hover+#nav-container nav,
+    #navbar #nav-container:hover nav {
+        transform: none;
+    }
+
+    /* to hide the hover bar of the product */
+    #navbar .dropdown:hover .dropdown-content {
+        display: none
+    }
+
+
+
+}
+
+/* -------------- RULESETS FOR FOOTER ----------------------- */
+
+#footer,
+#footer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #DEE2E6;
+    color: #343A40;
+}
+
+#footer {
+    padding: 1em 2em;
+    clear: both;
+}
+
+#footer h2,
+#footer h3 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#footer h2 {
+    font-size: 1.25em;
+}
+
+#footer h3 {
+    font-size: 1em;
+    margin-top: 0.75em;
+}
+
+#footer p {
+    font-size: 0.75em;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    margin-top: 0.75em;
+}
+
+#footer a {
+    display: block;
+    font-size: 0.75em;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #6C757D;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#footer svg {
+    width: 2em;
+    height: 2em;
+}
+
+/* To change the color of an svg path, the fill property is used instead of color. */
+#footer svg path {
+    fill: #343A40;
+}
+
+#footer a:hover svg path {
+    fill: #6C757D;
+}
+
+/* -------------- RULESETS FOR HOME PAGE ----------------------- */
+
+#home {
+    margin: 0;
+    padding: 0;
+}
+
+#home h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+#home * {
+    font-family: 'DM Sans', sans-serif;
+}
+
+#home .container {
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/background.jpg");
+    background-position: left;
+    background-size: cover;
+    border: none;
+    overflow: hidden;
+}
+
+#home .thumbnail-section {
+    padding: 15px;
+    background-color: #343A40;
+}
+
+#home .container2 {
+    display: flex;
+    background-clip: content-box;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+#home .des {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#home .des h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #343A40;
+}
+
+#home .des p {
+    padding-top: 15px;
+    font-size: 15px;
+    color: #403D39;
+}
+
+#home .des .product {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #212529;
+    background-color: #CED4DA;
+    border-radius: .5em;
+    transition: all 0.2s ease-in-out;
+}
+
+#home .des .product:hover {
+    color: #E9ECEF;
+    background-color: #212529;
+}
+
+#home .des2 {
+    margin-top: 20%;
+    margin-left: 10%;
+    color: #403D39;
+    font-weight: bold;
+}
+
+#home .des2 a {
+    color: #403D39;
+    font-style: italic;
+}
+
+#home .item-thumbnail {
+    transform: scale(0.5);
+    border: 5px solid lightblue;
+    outline: 3px solid lightblue;
+    outline-offset: 85px;
+    width: 350px;
+    height: 350px;
+}
+
+#home .footercontent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+
+}
+
+#home .social li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    right: 24px;
+}
+
+#home .social li a {
+    text-decoration: none;
+}
+
+#home .navpic {
+    width: auto;
+    height: 120px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1em;
+}
+
+
+@media screen and (max-width:1500px) {
+    #home .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    #home .item-thumbnail {
+        width: 192px;
+        height: 192px;
+    }
+}
+
+@media screen and (max-width:725px) {
+    #home .container {
+        background: none;
+    }
+
+    #home .container3 {
+        background-color: darkgrey;
+        overflow: hidden;
+    }
+
+    #home .container2 {
+        background-color: #343A40;
+        display: block;
+        padding: 0px;
+        max-width: 38em;
+        margin: 0 auto;
+    }
+
+    #home .des {
+        margin-top: 10%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    #home .item-thumbnail {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        outline-offset: 0px;
+        position: relative;
+        padding: 0px;
+        width: 192px;
+        height: 192px;
+    }
+
+}
+
+/* -------------- RULESETS FOR PRODUCT PAGE ----------------------- */
+
+#product,
+#product * {
+    /* By default, the width/height assigned to an element only specify the width/height the content box. */
+    /* border-box makes the width/height also account for additional padding and border. */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#product * {
+    font: 1em "DM Sans", sans-serif;
+    color: #212529;
+}
+
+#product h1 {
+    font: 2em "DM Serif Display", sans-serif;
+    margin: 1em 0;
+}
+
+#product h2 {
+    font: 1.5em "DM Serif Display", sans-serif;
+    margin: 0.75em 0;
+}
+
+#product p {
+    margin: 0.5em 0;
+}
+
+#product a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Hover effect for anchor tag. */
+#product a:hover {
+    color: #6C757D;
+}
+
+#product li {
+    margin-left: 2em;
+}
+
+#product article {
+    width: 70%;
+    padding: 0 3em;
+}
+
+#product aside {
+    position: sticky;
+    top: 1em;
+    float: right;
+    width: 25%;
+    padding: 1em;
+    margin: 2.5%;
+    border: solid 1px #ADB5BD;
+    border-radius: 0.5em;
+}
+
+#product aside table {
+    width: 100%;
+    /* Makes the table occupy the entire width of the aside element. */
+    display: block;
+    /* Setting display to block is necessary for width to take effect. */
+    border-spacing: 0;
+    overflow-x: auto;
+    /* Prevents horizontal overflow when the content inside the table exceeds its width. A scrollbar will be created for the user to access the content */
+}
+
+#product aside th {
+    padding: 0.2em 0.4em;
+    background-color: #ADB5BD;
+}
+
+#product aside td {
+    padding: 0.2em 0.4em;
+    background-color: #DEE2E6;
+}
+
+#product aside th,
+#product aside td,
+#product aside tr {
+    border: solid 1px #212529;
+    border-collapse: collapse;
+}
+
+#product article h1 {
+    text-align: center;
+}
+
+#product section {
+    margin: 2em 0;
+    display: flex;
+    align-items: center;
+}
+
+#product section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+#product section img {
+    width: 30%;
+    display: block;
+    /* The box shadow below is taken from Tailwind CSS. It was chosen for its elegant look. */
+    /* The property value consists of two shadows separated by a comma. Each shadow takes 5 values: offset-x, offset-y, blur radius, spread radius, and shadow color (in rgb). */
+    /* Source: https://tailwindcss.com/docs/box-shadow */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-radius: 1em;
+    border: solid 1px #E9ECEF;
+}
+
+#product section:nth-child(even) div {
+    width: 70%;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: solid 1px #ADB5BD;
+}
+
+#product section:nth-child(odd) div {
+    width: 70%;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: solid 1px #ADB5BD;
+}
+
+#product section p {
+    text-align: justify;
+}
+
+#product form {
+    margin: 1em 0;
+}
+
+#product label {
+    display: inline-block;
+}
+
+#product select {
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+#product input[type="submit"] {
+    display: block;
+    padding: 0.4em 0.8em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #DEE2E6;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+
+#product input[type="submit"]:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+@media screen and (max-width: 768px) {
+    #product {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #product aside,
+    #product article {
+        float: none;
+        width: auto;
+    }
+
+    #product aside {
+        position: static;
+        margin: 2em;
+    }
+
+    #product section {
+        /* Removes the grid layout for small enough screens. */
+        display: block;
+    }
+
+    /* Adds a bottom border for all sections except the last one. */
+    #product section:not(:last-child) {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        border-bottom: solid 1px #ADB5BD;
+    }
+
+    #product section img {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #product section:nth-child(odd) div,
+    #product section:nth-child(even) div {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #product section h2 {
+        text-align: center;
+    }
+}
+
+/* -------------- RULESETS FOR ENQUIRY PAGE ----------------------- */
+
+/* The 'enquiry' is the body's id of the enquiry page */
+#enquiry {
+    color: black;
+    font-size: 1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+#enquiry h1,
+#enquiry h2,
+#enquiry h3,
+#enquiry h4,
+#enquiry h5,
+#enquiry h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#enquiry p {
+    margin-bottom: 0.1em;
+}
+
+#enquiry header {
+    text-align: center;
+}
+
+#enquiry #container {
+    background-color: #f8f9fa;
+    padding: 2em;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #dbd4d4;
+}
+
+/*add a bit of space between the product feature checkboxes and the comment section*/
+#enquiry #prdfeature {
+    margin-bottom: 0.6em;
+}
+
+/*set-up the input box for the item in the form*/
+#enquiry input[type="text"],
+#enquiry input[type="password"],
+#enquiry input[type="email"],
+#enquiry select,
+#enquiry textarea {
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    margin: 0.3em 0 1em 0;
+    display: block;
+    border: none;
+    width: 70%;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #dbd4d4;
+}
+
+/*disable the outline display when the client click the box*/
+#enquiry input[type="text"],
+#enquiry input[type="password"],
+#enquiry input[type="email"],
+#enquiry select,
+#enquiry textarea :focus {
+    outline: none;
+}
+
+/*Style the fieldset element of the form*/
+#enquiry fieldset {
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #dbd4d4;
+    margin-bottom: 19px;
+}
+
+/*Change the cursor to pointer when the clients hover the label*/
+#enquiry label {
+    cursor: pointer;
+}
+
+/*style the submit button*/
+#enquiry #submitbtn {
+    font-family: "DM Sans", sans-serif;
+    background-color: #dee2e6;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+#enquiry #submitbtn:hover {
+    transform: scale(0.98);
+    background-color: #ba2c2c;
+    box-shadow: 4px 4px 10px #dbd4d4;
+    color: white;
+}
+
+/*bold the labels when hovering them*/
+#enquiry label:hover {
+    font-weight: bold;
+}
+
+/*media queries for smaller screen*/
+@media screen and (max-width: 500px) {
+    #enquiry #container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #enquiry #container {
+        max-width: 60%;
+    }
+}
+
+/* -------------- RULESETS FOR ABOUT US PAGE ----------------------- */
+
+/* Global Styles */
+
+#about {
+    padding: 0 15%;
+    color: #252422;
+    font-size: 1.2em;
+    font-family: "DM Sans", sans-serif;
+}
+
+#about h1,
+#about h2,
+#about h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#about ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#about li {
+    margin-bottom: 5px;
+}
+
+#about a {
+    color: #252422;
+}
+
+#about table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+#about th,
+#about td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+#about th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+#about td {
+    background-color: #e9ecef;
+}
+
+#about .photo-figure {
+    float: right;
+    border: 2px double;
+    padding: 20px;
+    max-width: 100%;
+}
+
+#about .photo-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about .Favorite li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#about dt {
+    padding-left: 40px;
+    display: inline-block;
+    width: 10%;
+}
+
+#about dd {
+    display: inline-block;
+    width: 80%;
+    word-break: break-all;
+}
+
+/* Specific Styles */
+
+#about h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#about h3 {
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+#about p {
+    padding-left: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 900px;
+}
+
+#about .menu {
+    display: inline-block;
+}
+
+#about nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#about nav p {
+    padding: 0;
+}
+
+#about nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ADB5BD;
+}
+
+#about nav a:hover {
+    background-color: #CED4DA;
+    border-color: #495057;
+}
+
+/*media for smaller screens*/
+@media screen and (max-width: 768px) {
+    #about p {
+        padding-left: 0px;
+    }
+
+    #about dt {
+        padding-left: 0px;
+    }
+
+    #about dd {
+        width: 70%;
+        word-break: keep-all;
+    }
+
+    #about ul {
+        padding-left: 0px;
+    }
+}
+
+/* -------------- RULESETS FOR ENHANCEMENTS PAGE ----------------------- */
+
+#enhancements,
+#enhancements * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#enhancements {
+    padding: 0 15%;
+    color: #252422;
+    font-family: "DM Sans", sans-serif;
+}
+
+#enhancements #subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#enhancements h1,
+#enhancements h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#enhancements h1 {
+    font-size: 2em;
+    margin: 1.5em 0;
+}
+
+#enhancements h2 {
+    font-size: 1.5em;
+    margin: 1.125em 0;
+}
+
+#enhancements p {
+    font-size: 1em;
+    margin: 0.75em 0;
+}
+
+#enhancements a {
+    text-decoration: underline;
+    font-style: italic;
+    color: #212529;
+}
+
+#enhancements figure {
+    width: 100%;
+    max-width: 48em;
+    margin: 1em auto;
+    background-color: #E9ECEF;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#enhancements figure a {
+    display: block;
+    width: 100%;
+    max-height: 12em;
+    overflow: hidden;
+}
+
+#enhancements figure img {
+    display: block;
+    width: 100%;
+}
+
+#enhancements figcaption {
+    text-align: center;
+}
+
+#enhancements pre {
+    background-color: #E9ECEF;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+    max-height: 30em;
+    overflow: auto;
+}

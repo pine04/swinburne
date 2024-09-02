@@ -1,0 +1,162 @@
+/*
+    filename: about.css
+    author: Nguyen Tran Quang Minh
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for about.php page.
+*/
+
+#about {
+    padding: 0 15%;
+    color: #252422;
+    font-size: 1.2em;
+    font-family: "DM Sans", sans-serif;
+}
+
+#about h1,
+#about h2,
+#about h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#about ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#about li {
+    margin-bottom: 5px;
+}
+
+#about a {
+    color: #252422;
+}
+
+#about table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+#about th,
+#about td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+#about th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+#about td {
+    background-color: #e9ecef;
+}
+
+#about .photo-figure {
+    float: right;
+    border: 2px double;
+    padding: 20px;
+    max-width: 100%;
+}
+
+#about .photo-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about .Favorite li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#about dt {
+    padding-left: 40px;
+    display: inline-block;
+    width: 10%;
+}
+
+#about dd {
+    display: inline-block;
+    width: 80%;
+    word-break: break-all;
+}
+
+/* Specific Styles */
+
+#about h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#about h3 {
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+#about p {
+    padding-left: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 900px;
+}
+
+#about .menu {
+    display: inline-block;
+}
+
+#about nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#about nav p {
+    padding: 0;
+}
+
+#about nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ADB5BD;
+}
+
+#about nav a:hover {
+    background-color: #CED4DA;
+    border-color: #495057;
+}
+
+/*media for smaller screens*/
+@media screen and (max-width: 768px) {
+    #about p {
+        padding-left: 0px;
+    }
+
+    #about dt {
+        padding-left: 0px;
+    }
+
+    #about dd {
+        width: 70%;
+        word-break: keep-all;
+    }
+
+    #about ul {
+        padding-left: 0px;
+    }
+}

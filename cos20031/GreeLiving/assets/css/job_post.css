@@ -1,0 +1,16 @@
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+main {
+  max-width: 1024px;
+  margin: 4rem auto;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  width: fit-content;
+}

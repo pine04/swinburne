@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Nguyen Quang Huy, Ta Quang Tung">
+	<meta name="description" content="Descriptions of enhancements made on the website.">
+	<meta name="keywords" content="enhancements">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Enhancements - Maverick Mates</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+	<header id="navbar">
+		<a href="./index.html" id="navbar-logo">
+			<img src="./images/logo.png" alt="logo">
+		</a>
+		<button id="navbar-opener">
+			<!-- The following SVG is the solid Bars icon taken from the FontAweseome library. Link: https://fontawesome.com/icons/bars?s=solid&f=classic -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+				<!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+				<path
+					d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+			</svg>
+		</button>
+		<div id="nav-container">
+			<nav>
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./product.html">Products</a></li>
+					<li><a href="./enquire.html">Enquiry</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./enhancements.html">Enhancements</a></li>
+				</ul>
+				<p>
+					&#169; Copyright Maverick Mates 2023
+				</p>
+			</nav>
+		</div>
+	</header>
+
+	<main id="enhancements">
+		<h1>Enhancements</h1>
+		<p id="subtitle">This page presents two enhancements we have made throughout this assignment.</p>
+		<section>
+			<h2>Responsive navigation bar</h2>
+			<p>
+				Our website features a responsive navigation bar that links all of our pages together. It features a
+				logo, which takes the user to the home page when clicked on, as well as five navigation links to the
+				different pages of our website. For large screens (more than 704px, or 44em), the navigation links are
+				laid out horizontally in a block. For smaller screen sizes, a button will appear in place of
+				these links. Hovering on the button will make a panel containing the links to slide in from the right side of
+				the screen. Moving the mouse outside of this panel will automatically collapse it.
+			</p>
+			<figure>
+				<a href="./images/navbar-large-screen.jpg">
+					<img src="./images/navbar-large-screen.jpg" alt="Large screen navigation bar appearance">
+				</a>
+				<figcaption>The navigation bar appearance for large screens. Click on the image to see the full size.</figcaption>
+			</figure>
+			<figure>
+				<a href="./images/navbar-small-screen.jpg">
+					<img src="./images/navbar-small-screen.jpg" alt="Small screen navigation bar appearance">
+				</a>
+				<figcaption>The navigation bar appearance for small screens. Click on the image to see the full size.</figcaption>
+			</figure>
+			<p>
+				The HTML markup for the responsive navigation bar.
+			</p>
+			<pre>
+&lt;header id=&quot;navbar&quot;&gt;
+  &lt;a href=&quot;./index.html&quot; id=&quot;navbar-logo&quot;&gt;
+    &lt;img src=&quot;./images/logo.png&quot; alt=&quot;logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;button id=&quot;navbar-opener&quot;&gt;
+    &lt;!-- The following SVG is the solid Bars icon taken from the FontAweseome library. Link: https://fontawesome.com/icons/bars?s=solid&f=classic --&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;
+      &lt;!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --&gt;
+      &lt;path
+        d=&quot;M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;div id=&quot;nav-container&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;./index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./product.html&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./enquire.html&quot;&gt;Enquiry&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./enhancements.html&quot;&gt;Enhancements&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;
+        &#169; Copyright Maverick Mates 2023
+      &lt;/p&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+			</pre>
+			<p>
+				The CSS for the responsive navigation bar. Only key rulesets and
+				properties needed for the responsivity of the navigation bar is 
+				included for the sake of brevity.
+			</p>
+			<pre>
+#navbar #navbar-opener {
+  display: none;
+}
+
+#navbar #nav-container {
+  width: fit-content;
+}
+
+#navbar #nav-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+@media screen and (max-width: 44em) {
+  #navbar #nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+    /* On small screens, this nav container will be on top of the trigger button. */
+    /* pointer-events: none tells the browser to ignore mouse events on the container, allowing hover events on the button to be fired. */
+    pointer-events: none;
+  }
+
+  #navbar #nav-container nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(100%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  #navbar #nav-container nav ul {
+    display: block;
+  }
+
+  #navbar #navbar-opener {
+    display: block;
+  }
+
+  /* 
+    This ruleset is applied to the nav container (which is a div) when: 
+    - The trigger button is hovered on.
+    - The nav container is hovered on.
+  */
+  #navbar #navbar-opener:hover + #nav-container,
+  #navbar #nav-container:hover {
+    pointer-events: all;
+  }
+
+  /* 
+    This ruleset is applied to the nav element itself when: 
+    - The trigger button is hovered on.
+    - The nav container is hovered on.
+  */
+  #navbar #navbar-opener:hover + #nav-container nav,
+  #navbar #nav-container:hover nav {
+    transform: none;
+  }
+}
+			</pre>
+			<p>
+				This navigation bar is present at the top of all the pages of our website, including this page. Change the screen
+				dimensions to see how it works!
+			</p>
+		</section>
+		<section>
+			<h2>
+				Additional CSS to create mobile-specific layouts.
+			</h2>
+			<p>
+				For this website, in addition to the layouts specified by the assignment 
+				requirements, we have also added additional CSS to create layouts specific 
+				to mobile devices. This allows users to browse our site on smaller screens
+				without compromising the user experience.
+			</p>
+			<p>
+				To achieve this responsivity, we have included a viewport meta tag in each of our
+				HTML pages and CSS media queries to apply additional rulesets at specific breakpoints.
+			</p>
+			<pre>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;				
+			</pre>
+			<p>
+				Example CSS on the <a href="./product.html">product.html</a> page to achieve responsivity.
+			</p>
+			<pre>
+@media screen and (max-width: 768px) {
+  #product aside,
+  #product article {
+    float: none;
+    width: auto;
+  }
+  
+  #product aside {
+    margin: 2em;
+  }
+  
+  #product section {
+    display: block;
+    /* Removes the grid layout for small enough screens. */
+  }
+  
+  /* Adds a bottom border for all sections except the last one. */
+  #product section:not(:last-child) {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: solid 1px #ADB5BD;
+  }
+  
+  #product section img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  #product section div {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  #product section h2 {
+    text-align: center;
+  }
+}	
+			</pre>
+			<p>
+				Responsive design is done throughout our website but is most noticeable on our
+				<a href="./index.html">index.html</a> and <a href="./product.html">product.html</a>
+				pages. Change the dimensions of your browser window on these pages and pay attention
+				to the layout changes.
+			</p>
+		</section>
+	</main>
+
+	<footer id="footer">
+        <h2>Maverick Mates - unafraid of being yourself.</h2>
+        <h3>Sitemap</h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a href="./enquire.html">Enquiry</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./enhancements.html">Enhancements</a></li>
+        </ul>
+        <h3>Connect</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com">
+                    <!-- Credit: https://fontawesome.com/search?q=facebook&o=r -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <!-- Credit: https://fontawesome.com/search?q=twitter&o=r -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com">
+                    <!-- Credit: https://fontawesome.com/search?q=instagram&o=r -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <!-- Credit: https://fontawesome.com/search?q=youtube&o=r -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <p>
+            &#169; Copyright Maverick Mates 2023
+        </p>
+    </footer>
+</body>
+
+</html>

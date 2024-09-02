@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="COS30045 Lab 1.2" />
+    <meta name="author" content="Ta Quang Tung" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <title>Lab 1.2 - Interactions with JavaScript - COS30045</title>
+
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <article>
+        <h1>Pets and the Pandemic</h1>
+        <h2>by Ta Quang Tung</h2>
+
+        <p>
+            A report from <em>Animal Medicines Australia (AMA)</em> has found that many Australians took the opportunity to
+            introduce
+            a pet into their household during the pandemic. Their survey indicated that there was a <strong>significant
+                increase</strong> in
+            the percent of households taking in a new dog, fish or bird. Their research also indicated that pets had a
+            number of <strong>positive influences</strong> on their lives such as:
+        </p>
+
+        <ul>
+            <li>companionship</li>
+            <li>better mental health</li>
+            <li>joy and happiness</li>
+        </ul>
+
+        <div class="button-container">
+            <button data-section="2019" class="selected">2019</button>
+            <button data-section="2021" >2021</button>
+            <button data-section="both" >Both</button>
+        </div>
+
+        <div class="graph-container">
+            <figure id="2019" class="visible">
+                <image alt="Pet ownership in 2019" src="./2019.png"/>
+                <figcaption>Fig 1. Percentages of different pets owned by Australians in 2019.</figcaption>
+            </figure>
+
+            <figure id="2021">
+                <image alt="Pet ownership in 2021" src="./2021.png"/>
+                <figcaption>Fig 2. Percentages of different pets owned by Australians in 2021.</figcaption>
+            </figure>
+
+            <figure id="both">
+                <image alt="Pet ownership in 2019 and 2021" src="./both.png"/>
+                <figcaption>Fig 3. Percentages of different pets owned by Australians in 2019 vs. 2021.</figcaption>
+            </figure>
+        </div>
+
+        <p>
+            With the increase in pet ownership the AMA are encouraging policy makers to consider the needs of companion
+            animals and their owners when considering rental, strata and body corporate regulations are well as accepting
+            animals in public places and transport.
+        </p>
+
+        <footer>
+            COS30045 Data Visualisation <br>
+            Semester 1 2024
+        </footer>
+    </article> 
+</body>
+
+</html>

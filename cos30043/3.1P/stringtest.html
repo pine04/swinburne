@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="language" content="english">
+        <meta name="keywords" content="vuejs, lab, tasks">
+        <meta name="description" content="VueJS String Test">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>String test - 3.1P</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>String Test</h1>
+            <label>
+                Please enter your name:
+                <input type="text" name="name" v-model="strName">
+            </label>
+            <div v-show="strName.trim() !== ''">
+                <p v-show='strName.trim().toLowerCase() === "tung"'>Awesome name.</p>
+                <p v-show='strName.trim().toLowerCase() !== "tung"'>{{strName}} is not my name.</p>
+            </div>
+        </div>
+
+        <script>
+            Vue.createApp({
+                data() {
+                    return {
+                        strName: ""
+                    }
+                }
+            }).mount("#app");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+/*
+    Name: Ta Quang Tung
+    Student ID: 104222196
+    Description: This CSS file sets up Tailwind for use.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

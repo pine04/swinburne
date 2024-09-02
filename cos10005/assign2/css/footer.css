@@ -1,0 +1,127 @@
+/*
+    Filename: footer.css
+    Author: Ta Quang Tung
+    Description: Stylesheet for the footer component of each page.
+*/
+
+#footer {
+    padding: 4rem;
+    background-color: #470D21;
+    color: #F9E4D4;
+}
+
+#footer-main {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-title {
+    font-size: 1.5rem;
+    font-family: "Rokkitt", sans-serif;
+    font-weight: bold;
+}
+
+#footer-socials img {
+    display: block;
+    width: 6rem;
+}
+
+#footer-socials div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#footer-socials p {
+    font-size: 1.25rem;
+}
+
+#footer-socials a {
+    display: block;
+    width: 1.75rem;
+    height: fit-content;
+}
+
+#footer-socials a svg {
+    width: 100%;
+    fill: #F9E4D4;
+    transition: fill .1s ease-in-out;
+}
+
+#footer-socials a:hover svg {
+    fill: #D67D3E;
+}
+
+#footer-links ul {
+    list-style: none;
+}
+
+#footer-links ul a {
+    display: block;
+    margin: .5em 0;
+    color: #F9E4D4;
+    transition: color .1s ease-in-out;
+}
+
+#footer-links ul a:hover {
+    color: #D67D3E;
+}
+
+#footer-contact a {
+    color: #F9E4D4;
+    transition: color .1s ease-in-out;
+}
+
+#footer-contact a:hover {
+    color: #D67D3E;
+}
+
+#footer hr {
+    border: none;
+    border-top: 1px solid;
+    margin-top: 2rem;
+}
+
+#footer-copyright {
+    text-align: center;
+}
+
+@media only screen and (max-width: 58rem) {
+    #footer-main {
+        flex-direction: column;
+    }
+
+    #footer-socials img {
+        margin: 0 auto;
+    }
+
+    #footer-socials div {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #footer-socials p {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    #footer-links ul {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #footer-contact p {
+        text-align: center;
+    }
+
+    .block-title {
+        text-align: center;
+        margin: 1em 0;
+    }
+}

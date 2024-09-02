@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Unit Delivery Survey">
+    <meta name="keywords" content="swinburne,survey,teaching,web development">
+    <meta name="author" content="Ta Quang Tung">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Unit Delivery Survey - Survey Part 1</title>
+    <style>
+        article {
+            max-width: 600px;
+            height: fit-content;
+            margin: 0 auto;
+        }
+        a + a {
+            margin-left: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Unit Delivery Survey - Part 1</h1>
+        <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="name">Name (optional):</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    Gender:
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" required="required">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </p>
+                <p>
+                    <label for="degree">Degree Program:</label>
+                    <select id="degree" name="program" required="required">
+                        <option value="">Please select</option>
+                        <option value="it">IT</option>
+                        <option value="multimedia">Multimedia</option>
+                        <option value="design">Design</option>
+                    </select>
+                </p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        <a href="../index.html">Previous</a>
+        <a href="./survey02.html">Next</a>
+    </article>
+</body>
+
+</html>

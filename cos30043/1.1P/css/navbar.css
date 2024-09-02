@@ -1,0 +1,175 @@
+/*
+    Filename: navbar.css
+    Author: Ta Quang Tung
+    Description: Stylesheet for the navigation bar component of each page.
+*/
+
+#navbar {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #F9E4D4;
+}
+
+#navbar #logo {
+    display: block;
+    width: 7rem;
+}
+
+#navbar #logo img {
+    display: block;
+    width: 100%;
+}
+
+#nav-container {
+    margin-left: 6rem;
+}
+
+#navbar ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+#navbar nav a {
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Rokkitt", sans-serif;
+    color: #9C0F48;
+    position: relative;
+}
+
+#navbar nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #9C0F48;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .2s ease-in-out;
+}
+
+#navbar nav a.active::after,
+#navbar nav a:hover::after {
+    transform: scale(1);
+}
+
+#nav-opaque-overlay,
+#nav-close,
+#nav-brand,
+#nav-copyright,
+#nav-open {
+    display: none;
+}
+
+@media only screen and (max-width: 52rem) {
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #nav-opaque-overlay.active {
+        display: block;
+        position: fixed;
+        z-index: 98;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        background-color: #ffffff89;
+    }
+
+    #nav-container {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        height: 100dvh;
+        margin: 0;
+        max-width: 20rem;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    #nav-container.active {
+        pointer-events: all;
+    }
+
+    #nav-container nav {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background-color: #F9E4D4;
+        transform: translate(100%);
+        transition: transform .2s ease-in-out;
+    }
+
+    #nav-container.active nav {
+        transform: none;
+    }
+
+    #nav-container nav ul {
+        margin: 2rem 0;
+        height: fit-content;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    #nav-brand {
+        display: block;
+        font-family: "Rokkitt", sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #9C0F48;
+    }
+
+    #nav-copyright {
+        display: block;
+        color: #9C0F48;
+    }
+
+    #nav-close {
+        display: block;
+        width: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    #nav-close svg {
+        display: block;
+        width: 100%;
+        fill: #9C0F48;
+        transition: fill .1s ease-in-out;
+    }
+
+    #nav-close:hover svg {
+        fill: #470D21;
+    }
+
+    #nav-open {
+        display: block;
+        width: 2rem;
+        height: fit-content;
+        border: none;
+        background-color: transparent;
+    }
+
+    #nav-open svg {
+        display: block;
+        width: 100%;
+        fill: #9C0F48;
+        transition: fill .1s ease-in-out;
+    }
+
+    #nav-open:hover svg {
+        fill: #470D21;
+    }
+}

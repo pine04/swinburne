@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:not(:last-of-type) {
+    border-right: solid 2px rgb(13, 110, 253);
+    padding-right: 1rem;
+}

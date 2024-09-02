@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Unit Delivery Survey">
+    <meta name="keywords" content="swinburne,survey,teaching,web development">
+    <meta name="author" content="Ta Quang Tung">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Unit Delivery Survey - Survey Part 2</title>
+    <style>
+        article {
+            max-width: 600px;
+            height: fit-content;
+            margin: 0 auto;
+        }
+        a + a {
+            margin-left: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Unit Delivery Survey - Part 2</h1>
+        <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+            <fieldset>
+                <legend>Programs In Use</legend>
+                <p>Which browser do you know how to use? (Check all that applies)</p>
+                <p>
+                    <input type="checkbox" id="chrome" name="browsers[]" value="chrome">
+                    <label for="chrome">Chrome</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="firefox" name="browsers[]" value="firefox">
+                    <label for="firefox">Firefox</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="ie" name="browsers[]" value="ie">
+                    <label for="ie">Internet Explorer</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="safari" name="browsers[]" value="safari">
+                    <label for="safari">Safari</label>
+                </p>
+
+                <p>Which text editor do you know how to use? (Check all that applies)</p>
+                <p>
+                    <input type="checkbox" id="komodo" name="editors[]" value="komodo">
+                    <label for="komodo">Komodo</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="notepadpp" name="editors[]" value="notepadpp">
+                    <label for="notepadpp">Notepad++</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="sublime" name="editors[]" value="sublime">
+                    <label for="sublime">Sublime Text</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="wrangler" name="editors[]" value="wrangler">
+                    <label for="wrangler">Wrangler</label>
+                </p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        <a href="./survey01.html">Previous</a>
+        <a href="./survey03.html">Next</a>
+    </article>
+</body>
+
+</html>

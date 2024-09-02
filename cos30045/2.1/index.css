@@ -1,0 +1,9 @@
+.warning {
+    color: red;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+}

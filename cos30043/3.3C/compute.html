@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="language" content="english">
+        <meta name="keywords" content="vuejs, lab, tasks">
+        <meta name="description" content="VueJS BMI Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BMI Calculator - 3.3C</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Compute App</h1>
+            <form>
+                <p>
+                    <label>
+                        Enter weight in kilograms: <input type="number" v-model="numWt" min="0">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Enter height in centimetres: <input type="number" v-model="numHt" min="0">
+                    </label>
+                </p>
+                <p v-if="numWt > 0 && numHt > 0">
+                    Computed BMI is: {{bmi.toFixed(2)}}
+                    <span v-if="bmi < 18.5">Underweight</span>
+                    <span v-if="bmi >= 18.5 && bmi < 25">Normal</span>
+                    <span v-if="bmi >= 25 && bmi < 30">Overweight</span>
+                    <span v-if="bmi >= 30">Obese</span>
+                </p>
+                <p v-else>Enter valid values for weight and height to see the result.</p>
+                <button type="submit" style="display: none;">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            Vue.createApp({
+                data() {
+                    return {
+                        numWt: 0,
+                        numHt: 0
+                    }
+                },
+                computed: {
+                    bmi() {
+                        return this.numWt / (this.numHt / 100) ** 2;
+                    }
+                }
+            }).mount("#app");
+        </script>
+    </body>
+</html>

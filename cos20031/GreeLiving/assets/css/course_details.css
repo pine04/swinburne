@@ -1,0 +1,12 @@
+form {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}

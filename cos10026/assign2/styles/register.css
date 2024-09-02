@@ -1,0 +1,112 @@
+/*
+    filename: register.css
+    author: Ta Quang Tung
+    created: 02/04/23
+    last modified: 09/04/23
+    description: Styles for register.php page.
+*/
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+#register, #register * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#register {
+    padding: 4rem;
+    font-family: "DM Sans", sans-serif;
+    color: #343A40;
+}
+
+#register h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+#register h1, #register > p {
+    text-align: center;
+}
+
+#register > p.error {
+    margin-top: 1rem;
+    color: red;
+}
+
+#register form {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#register fieldset {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+#register fieldset > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 35rem) {
+    #register fieldset > div {
+        grid-template-columns: 1fr;
+    }
+}
+
+#register legend {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+}
+
+#register label {
+    display: block;
+}
+
+#register input, #register select {
+    display: block;
+    width: 100%;
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+    border: solid 1px #212529;
+    font-family: "DM Sans", sans-serif;
+}
+
+#register input.error, #register select.error {
+    border: solid 2px red;
+}
+
+#register input[type="submit"] {
+    margin: 1rem auto;
+    width: fit-content;
+    font-size: 1.25rem;
+    background-color: #DEE2E6;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#register input[type="submit"]:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+#register a {
+    color: #343A40;
+}
+
+.error-message {
+    text-align: left;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,147 @@
+/*
+    Filename: form.css
+    Author: Ta Quang Tung
+    Description: Stylesheet for both the order.html and register.html pages.
+*/
+
+main {
+    padding: 3rem 2rem;
+    background-color: #F9E4D4;
+    color: #9C0F48;
+}
+
+h1 {
+    font-size: 3.375rem;
+    text-align: center;
+    margin: .25em 0;
+    color: #9C0F48;
+}
+
+main > p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #9C0F48;
+}
+
+form {
+    display: block;
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: solid 1px #9C0F48;
+    border-radius: 1rem;
+}
+
+legend {
+    font-family: "Rokkitt", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9C0F48;
+}
+
+.control-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 30rem) {
+    .control-container {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+}
+
+input:focus,
+select:focus {
+    outline-color: #D67D3E;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    display: block;
+    width: 100%;
+    padding: .4rem .8rem;
+    border: solid 1px #9C0F48;
+    border-radius: .5rem;
+    background-color: #fff5ee;
+    color: #9C0F48;
+}
+
+input[type="text"].error,
+input[type="email"].error,
+input[type="password"].error,
+select.error {
+    border: solid 2px red;
+}
+
+input[type="submit"] {
+    display: block;
+    width: fit-content;
+    padding: .4rem .8rem;
+    margin: 1rem auto;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    transition: background-color .2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #470D21;
+}
+
+input:disabled,
+select:disabled {
+    opacity: .5;
+}
+
+p.prompt label.prompt {
+    font-weight: bold;
+}
+
+p.required:after,
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+p.disabled,
+label.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+p.disabled:after,
+label.disabled:after {
+    content: "" !important;
+}
+
+.error-message {
+    color: red;
+}
+
+#product-add {
+    display: block;
+    width: fit-content;
+    padding: .4rem .8rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    transition: background-color .1s ease-in-out;
+}
+
+#product-add:hover {
+    background-color: #470D21;
+}

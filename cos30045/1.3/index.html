@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="COS30045 Lab 1.3" />
+    <meta name="author" content="Ta Quang Tung" />
+    <meta name="keywords" content="HTML, SVG" />
+
+    <title>Lab 1.3 - Drawing with SVG - COS30045</title>
+</head>
+
+<body>
+    <article>
+        <h1>Drawing shapes with SVG</h1>
+
+        <svg width="500" height="200" viewbox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(50 0)">
+                <!-- Backpack -->
+                <rect x="0" y="50" width="40" height="60" fill="red" rx="10" stroke="black" stroke-width="1"/>
+                <!-- Legs -->
+                <rect x="40" y="135" width="30" height="30" fill="red" rx="10" stroke="black" stroke-width="1"/>
+                <rect x="90" y="135" width="30" height="30" fill="red" rx="10" stroke="black" stroke-width="1"/>
+                <!-- Body -->
+                <rect x="30" y="20" width="100" height="125" fill="red" rx="10" stroke="black" stroke-width="1"/>
+                <!-- Face -->
+                <ellipse cx="85" cy="60" rx="40" ry="25" fill="white" stroke="black" stroke-width="1"/>
+                <!-- Grass -->
+                <line x1="0" y1="165" x2="130" y2="165" stroke="green" stroke-width="3"/>
+            </g>
+        </svg>
+
+        <footer>
+            COS30045 Data Visualisation <br>
+            Semester 1 2024
+        </footer>
+    </article> 
+</body>
+
+</html>

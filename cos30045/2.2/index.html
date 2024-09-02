@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="COS30045 Lab 2.2" />
+    <meta name="author" content="Ta Quang Tung" />
+    <meta name="keywords" content="HTML, JS, D3" />
+
+    <title>Lab 2.2 - Drawing a bar chart with D3 - COS30045</title>
+
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+
+<body>
+        <h1>Drawing with Data</h1>
+
+        <script>
+            const dataset = [14, 5, 26, 23, 9];
+            
+            // Constants for drawing the bar chart.
+            const w = 500, h = 120, barPadding = 5;
+            // Colors for drawing the chart.
+            const colorA = [29, 43, 83], colorB = [255, 0, 77];
+
+            // Creates an SVG element inside "body" with the specified width and height attributes.
+            let svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            // Drawing the bars.
+            svg.selectAll("rect") // Selects all rect elements in the SVG.
+                .data(dataset) // Associates the dataset with the selection.
+                .enter() // Gets the "enter" selection.
+                .append("rect") // For each data item, add a "rect" to the SVG.
+                .attr("x", (d, i) => (w / dataset.length) * i)
+                .attr("y", d => h - d * 4)
+                .attr("width", w / dataset.length - barPadding)
+                .attr("height", d => d * 4)
+                .attr("fill", (d, i) => getColorString(lerpColor(colorA, colorB, i / (dataset.length - 1))));
+            
+            // Drawing the labels.
+            svg.selectAll("text") // Selects all text elements in the SVG.
+                .data(dataset) // Associates the dataset with the selection.
+                .enter() // Gets the "enter" selection.
+                .append("text") // For each data item, add a "text" to the SVG.
+                .text(d => d)
+                .attr("x", (d, i) => (w / dataset.length) * i + (w / dataset.length - barPadding) / 2)
+                .attr("y", d => h - d * 4 + 16)
+                .attr("width", w / dataset.length - barPadding)
+                .attr("fill", "white")
+                .attr("font-family", "Arial, sans-serif")
+                .attr("font-weight", "bold")
+                .attr("text-anchor", "middle");
+
+            // Linearly interpolates between two colors. Colors are expressed as a 3-element array representing r, g, b.
+            function lerpColor(cA, cB, t) {
+                let c = [];
+
+                cA.forEach((component, index) => {
+                    c[index] = (1 - t) * component + t * cB[index];
+                })
+
+                return c;
+            }
+            
+            // Gets the string representation of an RGB color.
+            function getColorString(color) {
+                return `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+            }
+        </script>
+
+        <footer>
+            COS30045 Data Visualisation <br>
+            Semester 1 2024
+        </footer>
+</body>
+
+</html>

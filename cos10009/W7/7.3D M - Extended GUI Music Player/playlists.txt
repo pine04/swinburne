@@ -1,0 +1,12 @@
+1
+Playlist #1
+./images/playlist-default.png
+2
+Sober
+Lorde
+./images/lorde-melodrama.png
+./tracks/melodrama/2-sober.mp3
+Homemade Dynamite
+Lorde
+./images/lorde-melodrama.png
+./tracks/melodrama/3-homemade-dynamite.mp3

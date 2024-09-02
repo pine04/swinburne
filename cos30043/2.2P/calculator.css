@@ -1,0 +1,28 @@
+.display, .button {
+    border: solid 2px gray;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.display {
+    background-color: white;
+}
+
+.button {
+    text-align: center;
+}
+
+.button-memory {
+    background-color: lightgray;
+    color: rgb(85, 85, 85);
+}
+
+.button-number {
+    background-color: white;
+    font-weight: bold;
+}
+
+.button-operation {
+    background-color: yellow;
+    font-weight: bold;
+}

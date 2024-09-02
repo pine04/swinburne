@@ -1,0 +1,96 @@
+/*
+    Filename: features.css
+    Author: Ta Quang Tung
+    Description: Stylesheet for the features.html page.
+*/
+
+main {
+    padding: 3rem 0;
+    background-color: #F9E4D4;
+    color: #9C0F48;
+}
+
+h1 {
+    font-size: 3.375rem;
+    text-align: center;
+    margin: .25em 0;
+    color: #9C0F48;
+}
+
+main>p {
+    text-align: justify;
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    color: #9C0F48;
+}
+
+section {
+    padding: 6rem 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+main a {
+    font-style: italic;
+    text-decoration: underline;
+    color: inherit;
+}
+
+code {
+    font-family: monospace;
+}
+
+section p {
+    text-align: justify;
+}
+
+#feature-2 {
+    background-color: #9C0F48;
+    color: #F9E4D4;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 48rem) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.image-container {
+    max-height: 20rem;
+    border-radius: .5rem;
+    overflow: auto;
+}
+
+#feature-1 .image-container,
+#feature-3 .image-container {
+    border: solid .5rem #9C0F48;
+}
+
+#feature-2 .image-container {
+    border: solid .5rem #470D21;
+}
+
+.image-container a {
+    display: block;
+    width: 100%;
+    min-width: 44rem;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}

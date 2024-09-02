@@ -1,0 +1,13 @@
+footer {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+}
+
+#canvas {
+    margin: 3rem 0;
+}
+
+#label {
+    pointer-events: none;
+}
