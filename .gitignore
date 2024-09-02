@@ -37,3 +37,21 @@ coverage
 
 *.tsbuildinfo
 
+/vendor
+/uploads
+/sessions
+
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# local env files
+.env.local
+.env.*.local
