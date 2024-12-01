@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
+  <diagram name="Page-1" id="5SoBksvyQs9-cuI5TW0H">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#1B1464" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00ffc5;opacity=45;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="237.5" y="140" width="192.5" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-34" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ec008c;opacity=45;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="140" width="305" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;fontColor=#FFFFFF;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-3" target="HGTm7-9QuNev7_E9S5XG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-3" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeWidth=3;strokeColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="170" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-4" target="HGTm7-9QuNev7_E9S5XG-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-4" target="HGTm7-9QuNev7_E9S5XG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-4" value="Software&lt;div&gt;Graph (SCGL)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#00ffc5;fontStyle=1;fontColor=#1b1464ff;" vertex="1" parent="1">
+          <mxGeometry x="112.5" y="150" width="145" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-5" target="HGTm7-9QuNev7_E9S5XG-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-5" value="SPKGen" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#ec008cff;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-20" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-7" target="HGTm7-9QuNev7_E9S5XG-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=block;startFill=1;strokeWidth=3;strokeColor=#FFFFFF;dashed=1;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-7" target="HGTm7-9QuNev7_E9S5XG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-7" value="SCC* (SCCL)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#00ffc5;fontStyle=1;fontColor=#1b1464ff;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-8" value="RFSGen" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#ec008cff;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-20" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-10" value="Generative AI" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#ec008cff;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="270" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-19" value="Developer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="45" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-24" value="Captures software specifications in" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-25" value="Generates" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-26" value="Generates" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="30" y="500" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-27" value="Generates" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="320" y="390" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FFFFFF;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-10" target="HGTm7-9QuNev7_E9S5XG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-31" value="Refines" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-33" value="SCGL is based on SCCL." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-35" value="Previous work (JDA)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-37" value="Proposed work (Hackathon)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="330" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-38" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;opacity=45;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-42.5" y="520" width="455" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-11" value="REST-ful Fullstack Software (GenAI)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#00ffc5;fontStyle=1;fontColor=#1b1464ff;" vertex="1" parent="1">
+          <mxGeometry x="270" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-10" target="HGTm7-9QuNev7_E9S5XG-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;endArrow=block;endFill=1;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="HGTm7-9QuNev7_E9S5XG-8" target="HGTm7-9QuNev7_E9S5XG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-9" value="REST-ful Fullstack Software (JDA)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;strokeColor=none;fillColor=#00ffc5;fontStyle=1;fontColor=#1b1464ff;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGTm7-9QuNev7_E9S5XG-39" value="Evaluation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Anaheim;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAnaheim;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="555" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
