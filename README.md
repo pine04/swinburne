@@ -1,9 +1,10 @@
 # Swinburne Unit Repository
 
-Contains all the labs and assignments I have done at Swinburne. Also events I have participated in. Not meant to be complete.
+Contains all the labs and assignments I have done at Swinburne. Also events I have participated in. It is not meant to be complete. Projects for which I have signed NDAs are not uploaded here.
 
-Due to their large size, videos will be uploaded to this [Google Drive link](https://drive.google.com/drive/folders/1of8OBSdcJHJFRH1iPv6H_Qxty6Ww7UeO?usp=drive_link) instead.
+Video files are not committed because they are too large. If you want to watch my videos for reference, you can contact me by email.
 
+Enjoy cheating :)
 
 ## List of units
 
@@ -34,4 +35,7 @@ COS40003 - CONCURRENT PROGRAMMING
 COS40005 - COMPUTING TECHNOLOGY PROJECT A (not uploaded to maintain confidentiality)
 SWE30009 - SOFTWARE TESTING AND RELIABILITY  
 
+COS20001 - USER-CENTRED DESIGN
 COS40006 - COMPUTING TECHNOLOGY PROJECT B (not uploaded to maintain confidentiality)
+
+ICT20016 - WORK-INTEGRATED LEARNING PLACEMENT

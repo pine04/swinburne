@@ -55,3 +55,11 @@ local.properties
 # local env files
 .env.local
 .env.*.local
+
+bin
+obj
+
+# not committed for privacy reasons
+cos40005
+cos40006
+gatino

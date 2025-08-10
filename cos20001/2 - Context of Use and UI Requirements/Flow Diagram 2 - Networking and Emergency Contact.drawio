@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="w-GSn4rVRWABjTmaKZI6">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uMwNMx3S04j1B5KmobcH-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-1" target="uMwNMx3S04j1B5KmobcH-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-1" target="uMwNMx3S04j1B5KmobcH-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-1" target="uMwNMx3S04j1B5KmobcH-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-1" target="uMwNMx3S04j1B5KmobcH-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-1" target="uMwNMx3S04j1B5KmobcH-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Adult child of a person with dementia - want to learn more about dementia caretaking&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="897.5" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="467" y="837.5" width="443" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Dementia support center&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="875" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uMwNMx3S04j1B5KmobcH-5" target="uMwNMx3S04j1B5KmobcH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Staff - provide information of dementia caretaking&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="987.5" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-6" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="620" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;seek for help&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="850" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;relatives may not be available&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="807.5" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-10" value="" style="shape=mxgraph.signs.safety.high_voltage_2;html=1;pointerEvents=1;fillColor=#FFB343;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="807.5" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-11" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Relatives - may help to look after person with dementia for a while&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="452" y="610" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;reach out for information&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="970" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;can&#39;t find contact information&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="920" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-16" value="" style="shape=mxgraph.signs.safety.high_voltage_2;html=1;pointerEvents=1;fillColor=#FFB343;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="920" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-17" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;provide supports and information&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="232" y="1038" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;newborn baby - need care and attention from the adult&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="570" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-20" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;look after&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="780" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-21" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Job&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="1042.5" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-23" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;spend time&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="987.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-24" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Person with dementia - need regular care from the other&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="1320" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-26" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;can&#39;t afford enough time&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="173.5" y="1130" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-27" value="" style="shape=mxgraph.signs.safety.high_voltage_2;html=1;pointerEvents=1;fillColor=#FFB343;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1130" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uMwNMx3S04j1B5KmobcH-28" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;check for condition&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1180" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

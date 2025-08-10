@@ -8,8 +8,8 @@
 
 <?php
 	// Please change this information if you are testing this website on localhost.
-	$host = "feenix-mariadb.swin.edu.au";
-	$user = "s104222196";
-	$pwd = "pinesql";
+	$host = "localhost";
+	$user = "root";
+	$pwd = "pinetar@2004";
 	$sql_db = "s104222196_db";
 ?>
